@@ -1,0 +1,8 @@
+#Ipython Notebook
+.ipynb_checkpoints
+
+# tex files used in notebooks 
+/notebooks/tex_files
+
+# Other junk 
+.DS_Store
