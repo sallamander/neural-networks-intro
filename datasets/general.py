@@ -49,5 +49,6 @@ def gen_multiple_linear(betas, n_obs):
     xs = np.concatenate([ones, xs], axis=1)
 
     ys = np.dot(xs, betas)
+    ys = ys.reshape(len(ys), 1)
 
     return xs, ys
