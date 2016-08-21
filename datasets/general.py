@@ -52,3 +52,32 @@ def gen_multiple_linear(betas, n_obs):
     ys = ys.reshape(len(ys), 1)
 
     return xs, ys
+
+
+def gen_multiple_logistic(betas, n_obs): 
+    """Generate data that follows a multivariate logistic function. 
+    
+    This function assumes that the first `beta` in the `betas` corresponds
+    to `beta_0`, and will associate a vector of 1's with this `beta`. 
+
+    Args:
+    ----
+        betas: 1d np.ndarray of ints/floats
+        n_obs: int
+
+    Return:
+    ------
+        ys: 2d np.ndarray
+        xs: 1d np.ndarray
+    """
+    
+    n_vars = len(betas) - 1
+    # Scale data to get it centered at 0 (and not 0.5)
+    xs = (np.random.random(size=(n_obs, n_vars)) - 0.5)
+    ones = np.ones(shape=(n_obs, 1))
+    xs = np.concatenate([ones, xs], axis=1)
+
+    ys = 1 / (1 + np.exp(-np.dot(xs, betas)))
+    ys = ys.reshape(len(ys), 1)
+
+    return xs, ys

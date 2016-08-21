@@ -2,7 +2,7 @@
 .ipynb_checkpoints
 
 # tex files used in notebooks 
-/notebooks/tex_files
+shallow-neural-networks/tex-files
 
 # Other junk 
 .DS_Store
