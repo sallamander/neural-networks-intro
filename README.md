@@ -13,6 +13,30 @@ The plan for the organization of this introduction is to have four "mini-books",
 
 I'll fill the details in as I have them - this is a work in progress. 
 
+## Following Along
+
+To follow along with the repository interactively, you can do one of two things: 
+
+1. Fire up the Binder below. This will launch a Jupyter notebook that serves this repository through a Docker Container, and will allow you to run everything from within your browser. The potential downside is that any changes you make will not be saved when you shutdown your browser. This should work with Python 2 or 3, but please open up an issue if it doesn't!
+
+ [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/sallamander/neural-networks-intro) 
+
+2. Clone this repository, and then add it to your `PYTHONPATH`.
+ 
+ Clone the repository: 
+
+ ```bash
+git clone https://github.com/sallamander/neural-networks-intro/ 
+```
+
+ Add the following line to your `.bashrc` or `.bash_profile`
+
+ ```bash    
+export PYTHONPATH="/Users/sallamander/projects/neural-networks-intro:$PYTHONPATH"
+```
+
+ **Note**: You will have to change `/Users/sallamander/projects` to point to the location of wherever you clone the repository to.
+
 ## Current Status
 
 I have finished the first mini-book (see the [README](https://github.com/sallamander/neural-networks-intro/tree/master/mini-books/shallow-neural-networks/README.md) for details), and am about to dive into the second one.
