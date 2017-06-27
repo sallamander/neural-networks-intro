@@ -7,13 +7,17 @@ Similar to the experience that [Andrej Karpathy describes](http://karpathy.githu
 
 ## Following Along
 
-To follow along with the repository interactively, you can do one of two things: 
+To follow along with the repository in browser, you can simply click through the repository. Note that the image links will not render properly, because I chose to use HTML `<img>` tags in order to style some of the images (and it appears that IPython notebooks won't render those correctly on GH). The images are farily helpful, so it's recommended you follow along interactively via one of the options listed below.
 
-1. Fire up the Binder below. This will launch a Jupyter notebook that serves this repository through a Docker Container, and will allow you to run everything from within your browser. The potential downside is that any changes you make will not be saved when you shutdown your browser. This should work with Python 2 or 3, but please open up an issue if it doesn't!
+To follow along with the repository interactively (and have the images render appropriately), you can do one of two things: 
+
+1. Fire up the Binder below. This will launch a Jupyter notebook that serves this repository through a Docker Container, and will allow you to run everything from within your browser. The potential downside is that any changes you make will not be saved when you shutdown your browser. This should work with Python 2 or 3.
 
  [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/sallamander/neural-networks-intro) 
 
-2. Clone this repository, and then add it to your `PYTHONPATH`.
+ *Note*: This appears to have become a little dated since it was originally put together, and support will not be maintained for this option since it relies on Binder.
+
+2. Clone this repository, and then open the HTML files in each chapter in your browser, or pull open the notebooks.
  
  Clone the repository: 
 
@@ -21,7 +25,7 @@ To follow along with the repository interactively, you can do one of two things:
 git clone https://github.com/sallamander/neural-networks-intro/ 
 ```
 
- Add the following line to your `.bashrc` or `.bash_profile`
+ If working with the notebooks, add the following line to your `.bashrc` or `.bash_profile`
 
  ```bash    
 export PYTHONPATH="/Users/sallamander/projects/neural-networks-intro:$PYTHONPATH"
